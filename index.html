@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script src="practice.js"></script>
+    <h3>
+        <script>
+            document.write("Watch this space for our e-store.<br>");
+            document.write("Coming Soon ...");
+        </script>
+    </h3>
+    <h3>
+        <script src="estoreExternal.js"></script>
+    </h3>
+    <!--Using innerHTML-->
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo2').innerHTML = "<h2>Hello World but in innerHTML</h2>";
+        document.write(5 + 6);
+    </script>
+    <p id="result"></p>
+    <button type="button" onclick="document.getElementById('result').innerHTML = 5 + 7">Try it</button>
+    <script>
+        //window.alert(5 + 21)
+        //alert(4 + 21)
+    </script>
+    <div> <!--Javascript Statements-->
+        <script>
+            let a, b, c;
+            a = 5;
+            b = 65;
+            a = 1; //Re-assigned //Re-Declare not possible
+            c = a + b;
+            document.writeln(c);
+            
+            const pi = 3.1416;
+            //pi = 3; //Not Possible
+            document.writeln(pi);
+
+            var n = 87;
+            var n = 27; //Re-assigned & Re-Declared
+            document.writeln(n);
+
+            console.log(a + b + c + pi + n);
+
+            if(true) {
+                let n = 500
+                document.write(n);
+            }
+        </script>
+    </div>
+    <div> <!--arithmetic op-->
+        <script>
+            const sum = 5 + 3;
+            const diff = 10 - 2;
+            const p = 4 * 2;
+            const q = 8 / 2;
+            console.log(sum, diff, p, q);
+
+            let x = 10;
+            x += 5;
+            x *= 2;
+            console.log(x);
+        </script>
+
+        <button onclick="document.getElementById('buttonres').innerHTML = <br>">press</button>
+        <p id="buttonres"></p>
+        <p>test</p>
+    </div>
+</body>
+</html>
